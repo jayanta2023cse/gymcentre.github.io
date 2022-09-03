@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamCatcher Gym Centre</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="project_1/style.css">
+<style>
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('project_1/gym.jpg');
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 50px;
+        top: 20px;
+        /* border: 2px solid blue; */
+    }
+
+    .mid {
+        text-align: center;
+        display: block;
+        width: 36%;
+        margin: 27px auto;
+        /* border: 3px solid rgb(235, 239, 8); */
+    }
+
+    .right {
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        right: 22px;
+        top: 32px;
+        display: inline-block;
+        /* border: 3px solid rgb(235, 26, 193); */
+    }
+
+    .navbar li {
+        text-align: center;
+        font-size: 21px;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: deeppink;
+        padding: 25px 6px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover {
+        color: whitesmoke;
+        text-decoration: underline;
+    }
+
+    .left img {
+        width: 47px;
+        padding: 2px 31px;
+    }
+
+    .left div {
+        /* line-height: 20px; */
+        color: khaki;
+        font-size: 15px;
+        text-align: center;
+        margin: -10px auto;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        padding: 2px 9px;
+        margin: 2px;
+        font-size: 17px;
+        cursor: pointer;
+        border: 2px solid #bc2312;
+        border-radius: 5px;
+        background-color: rgb(178, 188, 160);
+    }
+
+    .btn:hover {
+        color: rgb(12, 14, 11);
+        text-decoration: underline;
+        background-color: whitesmoke;
+    }
+
+    .container {
+        /* border: 3px solid red; */
+        margin: 70px 93px;
+        padding: 6px 25px;
+        width: 430px;
+        display: inline-block;
+    }
+    
+    .container h2 {
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .form_group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 260px;
+        margin: 3px auto;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        padding: 0px 26px;
+        border-radius: 7px;
+    }
+
+    .container button {
+        font-size: 20px;
+        background-color: #f7eaea;
+        border: 2px solid yellow;
+        display: block;
+        width: 20%;
+        margin: 9px auto;
+        padding: 2px;
+    }
+
+    .container button:hover {
+        text-decoration: underline;
+        color: rgb(96, 99, 79);
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- this is left part -->
+        <div class="left">
+            <img src="project_1/logo.jpg" alt="">
+            <div class="div">DreamCatcher</div>
+            <div class="div">Gym Centre</div>
+        </div>
+        <!-- this is mid part -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">See More</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- this is right part -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join The Best Gym of Durgapur Now</h2>
+        <!-- noaction.php is the backend php file of this website -->
+        <form action="noaction.php">
+            <div class="form_group">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form_group">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="form_group">
+                <input type="text" placeholder="Enter Your Gender">
+            </div>
+            <div class="form_group">
+                <input type="text" placeholder="Enter Your Locality">
+            </div>
+            <div class="form_group">
+                <input type="text" placeholder="Enter Your Email ID">
+            </div>
+            <div class="form_group">
+                <input type="text" placeholder="Enter Your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
